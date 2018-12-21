@@ -22,6 +22,8 @@ Before you start, you should install node on either your Windows or Mac computer
 
 ## How to Use This Repo While Watching the Course
 
+### Special Note: Many examples require your local json server be running. If you get an error including "map" it means the data array trying to be mapped over does not exist.  Remember you need to start the json-server by typing `npm run json-server`
+
 It is suggested that you clone or download this repository to your
 local computer while you are watching the course. If you are planning on 
 watching the course without coding along, this will give you 
