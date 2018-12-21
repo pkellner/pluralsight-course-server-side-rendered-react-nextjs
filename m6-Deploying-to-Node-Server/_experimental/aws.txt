@@ -1,0 +1,110 @@
+Just docker https://docker-curriculum.com/#docker-run
+
+docker build -t svccps .
+
+docker run -p 1080:3000 -e "NODE_ENVx=development" -e "DB_HOST1=new1axxx" -e "DB_HOST2=new2axxx" svccps1:latest
+
+docker run -p 80:3000 -e "NODE_ENVx=development" -e "DB_HOST1=new1axxx" -e "DB_HOST2=new2axxx" svccps1:latest
+
+
+docker build -t svccps1 .
+
+
+
+
+
+------------
+for setting deployment to prod
+npm install --save-dev cross-env
+
+ r tag svccmobireact:latest 041634299659.dkr.ecr.us-east-1.amazonaws.com/svccmobireact:latest
+docker push 041634299659.dkr.ecr.us-east-1.amazonaws.com/svccmobireact:latest
+
+docker build -t svccmobireact .
+
+docker run -p 1080:3000 svccmobireact:latest
+
+docker run -p 1080:3000 -e "NODE_ENV=development" svccps1:latest
+
+docker ps {get id}
+docker stop 4ac6..
+
+Note: checkbox "force update" on first wizard of update cluster/service
+
+to update env variables, task definitions, select task, then "create new revision", click on container, then can put in env variables
+then, to re-launch, go to services, update service and then save.
+
+https://docs.docker.com/engine/reference/run/#env-environment-variables
+$ docker run -e "NODE_ENV=production" -e today --rm alpine env
+
+docker run -p 8080:3000 -e "NODE_ENV=production" svccmobireact:latest  {this works, server.js shows env}
+
+production notes, got docker file from here https://blog.token.ai/deploying-next-js-react-applications-to-production-sans-now-5ff014e111d0
+
+
+Successfully created repository
+041634299659.dkr.ecr.us-east-1.amazonaws.com/peterssvcc1
+Ensure you have installed the latest version of the AWS CLI and Docker. For more information, see the ECR documentation.
+1) Retrieve the login command to use to authenticate your Docker client to your registry.
+For macOS or Linux systems, use the AWS CLI:
+$(aws ecr get-login --no-include-email --region us-east-1)
+
+For Windows systems, use AWS Tools for PowerShell:
+Invoke-Expression -Command (Get-ECRLoginCommand -Region us-east-1).Command
+
+Note: If you receive an "Unknown options: --no-include-email" error when using the AWS CLI, ensure that you have the latest version installed. Learn more
+2) If you are using the AWS CLI, run the login command from the output of step 1.
+3) Build your Docker image using the following command. For information on building a Docker file from scratch see the instructions here. You can skip this step if your image is already built:
+docker build -t svccmobireact .
+
+4) After the build completes, tag your image so you can push the image to this repository:
+docker tag peterssvcc1:latest 041634299659.dkr.ecr.us-east-1.amazonaws.com/peterssvcc1:latest
+
+5) Run the following command to push this image to your newly created AWS repository:
+docker push 041634299659.dkr.ecr.us-east-1.amazonaws.com/peterssvcc1:latest
+
+
+https://medium.freecodecamp.org/how-to-deploy-a-node-js-application-to-amazon-web-services-using-docker-81c2a2d7225b
+
+metadata endpoints
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint.html
+169.254.170.2/v2/metadata
+
+
+putty,
+create a keypair and put in docs/AWS
+updated cloud formation stack to include keypair name
+putty to ssh / 22 (added port 22 to security group associted ec2 instance)
+ec2-user is name to ssh in
+ran puttygen, imported pem file, saved private key as ppk
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+
+getting stats
+https://docs.aws.amazon.com/cli/latest/reference/ecs/describe-services.html
+
+aws ecs describe-services --service svccmobireact-svc1 --cluster  svccmobi-cluster --region us-east-1
+https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ECS.html#describeServices-property
+https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ECS.html#describeServices-property
+
+
+var ecs = new AWS.ECS({apiVersion: '2014-11-13',region: 'us-east-1'});
+var params = {
+  services: [ /* required */
+    'svccmobireact-svc1'
+  ],
+  cluster: 'svccmobi-cluster'
+};
+ecs.describeServices(params, function(err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else     console.log(data);           // successful response
+});
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html
+task definition, create role
+ecs full access
+
+
+
+
+
