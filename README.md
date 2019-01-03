@@ -1,10 +1,8 @@
 # pluralsight-course-server-side-rendered-react-nextjs
 The master branch here is the latest updates to the Pluralsight course published by Peter Kellner in December of 2018 in the master branch.
 
-
-
-
-
+Course on Pluralsight:
+https://app.pluralsight.com/library/courses/building-server-side-rendered-react-apps-beginners
 
 # Course Code for [Building Server-side Rendered React Apps for Beginners](https://app.pluralsight.com/profile/author/peter-kellner) on Pluralsight
 
