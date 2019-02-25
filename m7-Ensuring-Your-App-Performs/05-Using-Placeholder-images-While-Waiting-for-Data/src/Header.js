@@ -11,7 +11,7 @@ export class Header extends Component {
                 </div>
                 <div className="col-12 col-sm-8 text-lg-right">
                     <div><img src={svccImg}/></div>
-                    <h2>Silicon Valley Code Camp 2018x</h2>
+                    <h2>Silicon Valley Code Camp 2018</h2>
                 </div>
             </div>
         </div>;

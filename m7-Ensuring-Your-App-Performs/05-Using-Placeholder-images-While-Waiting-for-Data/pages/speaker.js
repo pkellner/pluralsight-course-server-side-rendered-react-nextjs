@@ -44,7 +44,7 @@ class Speaker extends Component {
             <div className='container'>
                 <div className="row">
                     <h2 className='margintopbottom20'>{this.state.speakerDataOne.firstName} {this.state.speakerDataOne.lastName}</h2>
-                    <p className='margintopbottom20'>{this.state.speakerDataOne.bio}</p>
+                    <p className='margintopbottom20'  dangerouslySetInnerHTML={{__html: this.state.speakerDataOne.bio}}    ></p>
                 </div>
             </div>
         );
