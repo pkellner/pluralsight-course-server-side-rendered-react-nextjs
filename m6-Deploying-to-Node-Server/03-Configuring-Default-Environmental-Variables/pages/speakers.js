@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import axios from 'axios';
 import SpeakerCard from "../src/SpeakerCard";
 

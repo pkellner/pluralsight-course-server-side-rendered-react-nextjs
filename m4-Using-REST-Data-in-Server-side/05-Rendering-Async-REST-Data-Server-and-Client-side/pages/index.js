@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import axios from 'axios';
 
 class Index extends React.Component {

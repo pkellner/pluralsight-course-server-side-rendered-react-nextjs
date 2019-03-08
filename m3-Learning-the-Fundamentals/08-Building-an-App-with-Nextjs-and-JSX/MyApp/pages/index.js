@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 class Index extends React.Component {
 

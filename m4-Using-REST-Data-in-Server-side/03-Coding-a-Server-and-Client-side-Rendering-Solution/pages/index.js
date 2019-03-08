@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import DigitalClock from "../src/DigitalClock";
 
 class Index extends React.Component {
