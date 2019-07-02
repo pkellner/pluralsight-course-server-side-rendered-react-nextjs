@@ -16,7 +16,8 @@ Before you start, you should install node on either your Windows or Mac computer
 2. **Clone this repository.** - `git clone https://github.com/pkellner/pluralsight-course-server-side-rendered-react-nextjs` or [download the zip](https://github.com/pkellner/pluralsight-course-server-side-rendered-react-nextjs/archive/master.zip)
 3. **Set the default directory to which module you want (example: cd m3-Building-Data-Driven-SSR-App/I-NextJS-GetInitialProps - `cd m3-Building-Data-Driven-SSR-App/I-NextJS-GetInitialProps`
 4. **Install Node Packages with Dependencies.** - `npm install`
-5. **Run the web app - `npm run dev` 
+5. **Install [this chrome extension](https://chrome.google.com/webstore/detail/nextjs-utilities-extensio/ffcogmoganomoabikgmcmckdgojnpldo) for viewing performance data (optional).**
+6. **Run the web app - `npm run dev` 
 
 ## How to Use This Repo While Watching the Course
 
