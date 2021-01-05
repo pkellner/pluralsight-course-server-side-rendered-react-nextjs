@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.1.3",
     "dotenv-webpack": "^1.5.7",
     "next": "^7.0.2",
