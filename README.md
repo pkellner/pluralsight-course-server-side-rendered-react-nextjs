@@ -4,6 +4,15 @@ The master branch here is the latest updates to the Pluralsight course published
 Course on Pluralsight:
 https://app.pluralsight.com/library/courses/building-server-side-rendered-react-apps-beginners
 
+# Recently Released Courses From Peter Kellner
+
+| **Course**                                                                           | Release Date  |
+|--------------------------------------------------------------------------------------|---------------|
+| **[Using Hooks in React 18](https://pluralsight.com/courses/react-18-using-hooks/)** | November 2022 |
+| **[What is React](https://pluralsight.com/courses/react-what-is/)**                  | August 2022   |
+| **[What's New in React 18](https://pluralsight.com/courses/react-18-whats-new/)**    | May 2022      |
+
+
 # Course Code for [Building Server-side Rendered React Apps for Beginners](https://app.pluralsight.com/profile/author/peter-kellner) on Pluralsight
 
 This GitHub repo includes source for all modules of the course that involve code.
@@ -88,9 +97,6 @@ To run each of these scripts, cd into the appropriate direct ( example: `m3-Buil
 then run the script name as follows:
 
 `npm run dev`
-
-
-[![Course Preview](https://img.youtube.com/vi/rJSXRGegxFw/0.jpg)](https://www.youtube.com/watch?v=rJSXRGegxFw)
 
 ## Experimental Directories
 
