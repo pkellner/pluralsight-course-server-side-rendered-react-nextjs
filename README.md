@@ -1,19 +1,17 @@
-# pluralsight-course-server-side-rendered-react-nextjs
-The master branch here is the latest updates to the Pluralsight course published by Peter Kellner in December of 2018 in the master branch.
+# Course Code for [Building Server-side Rendered React Apps for Beginners](https://pluralsight.com/course/building-server-side-rendered-react-apps-beginners) on Pluralsight
 
-Course on Pluralsight:
-https://app.pluralsight.com/library/courses/building-server-side-rendered-react-apps-beginners
-
-# Recently Released Courses From Peter Kellner
+## OTHER Recently Released Courses From Peter Kellner
 
 | **Course**                                                                           | Release Date  |
-|--------------------------------------------------------------------------------------|---------------|
-| **[Using Hooks in React 18](https://pluralsight.com/courses/react-18-using-hooks/)** | November 2022 |
-| **[What is React](https://pluralsight.com/courses/react-what-is/)**                  | August 2022   |
-| **[What's New in React 18](https://pluralsight.com/courses/react-18-whats-new/)**    | May 2022      |
+|-------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **[Using Hooks in React 18](https://pluralsight.com/courses/react-18-using-hooks/)**                                          | November 2022 |
+| **[What is React](https://pluralsight.com/courses/react-what-is/)**                                          | August 2022   |
+| **[What's New in React 18](https://pluralsight.com/courses/react-18-whats-new/)**                                             | May 2022      |
+| **[Data and UI Patterns in React](https://github.com/pkellner/pluralsight-building-essential-ui-data-elements-in-react/)**    | December 2021 |
 
+<hr/>
 
-# Course Code for [Building Server-side Rendered React Apps for Beginners](https://app.pluralsight.com/profile/author/peter-kellner) on Pluralsight
+The master branch here is the latest updates to the Pluralsight course published by Peter Kellner in December of 2018 in the master branch.
 
 This GitHub repo includes source for all modules of the course that involve code.
 
